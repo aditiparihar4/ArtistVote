@@ -1,11 +1,15 @@
+Java version - 17
+
  API calls (with documentation for each)
 Swagger url - http://localhost:8080/swagger-ui/index.html
 
 that
 o Get an overview/data summary. All artists, with vote count for each.
 Rest URL - http://localhost:8080/api/showAll
+
 o Get a data summary for a specific artist, with vote count for that artist only.
 Rest URL  - http://localhost:8080/api/getArtist/led_Zeppelin
+
 o Add a vote row (using HTTP POST) to the vote table, for a specific artist.
 Rest URL - http://localhost:8080/api/addVote
 Add Vote Request -
