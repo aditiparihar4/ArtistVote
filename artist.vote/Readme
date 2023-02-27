@@ -1,0 +1,29 @@
+ API calls (with documentation for each)
+Swagger url - http://localhost:8080/swagger-ui/index.html
+
+that
+o Get an overview/data summary. All artists, with vote count for each.
+Rest URL - http://localhost:8080/api/showAll
+o Get a data summary for a specific artist, with vote count for that artist only.
+Rest URL  - http://localhost:8080/api/getArtist/led_Zeppelin
+o Add a vote row (using HTTP POST) to the vote table, for a specific artist.
+Rest URL - http://localhost:8080/api/addVote
+Add Vote Request -
+{
+    "artist_id":1,
+    "create_date":"2023-02-25 15:50:50",
+    "update_date":"2023-02-25 15:50:50"
+}
+Add Vote Response -
+{
+  "message": "Success",
+  "date": "2023-02-27T00:01:44.4293793"
+}
+
+o All responses are in JSON, with a success message and the date Time of the operation.
+ Unit tests in Java are required.
+ All API calls (except the overview) use an artist label value as an input parameter. The convention is
+no spaces, all lowercase, and words separated by underscores.
+
+
+
